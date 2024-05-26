@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my website</title>
+	
+</head>
+<body>
+<button onclick="showContent()">Show your image</button>
+<template>
+  <h2>your image</h2>
+  <img src="mokey.jpg.jpg" width="214" height="204">
+</template>
+<script>
+function showContent() {
+  let temp = document.getElementsByTagName("template")[0];
+  let clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+</body>
+</html>
+
